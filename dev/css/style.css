@@ -1,0 +1,253 @@
+body {
+    margin: auto;
+    background: linear-gradient(to right, #001223, #120015);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    width: 100%;
+
+}
+
+header .header-logo{
+  width: 20%;
+}
+
+header .header-logo img{
+  float: right;
+  width: 80%;
+}
+
+header .header-nav{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 25px;
+}
+
+header .header-nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: min-content;
+  width: 80%;
+}
+
+header .header-nav ul li{
+  display: flex;
+  align-items: center;
+}
+
+header .header-nav ul li .nav-option{
+  color: #888888;
+}
+
+header .header-nav ul li .nav-option:after {
+  display: block;
+  content: '';
+  border-bottom: 2px solid #ffffff;  
+  transform: scaleX(0);  
+  transition: transform 0.5s ease-in-out;
+}
+
+header .header-nav ul li .nav-option:after{
+  transform-origin:  0% 50%;
+}
+
+header .header-nav ul li .nav-option:hover:after{
+  transform: scaleX(1);
+}
+
+header .header-nav ul li .nav-option:hover{
+  color: #fff;
+}
+
+.li-button a{
+  padding: 8px 25px 8px 25px;
+  background: #fff;
+  color: #001223;
+  border-radius: 50px;
+}
+
+select {
+  color: transparent;
+  background: none;
+  line-height: 1.3;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  margin: 0;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  width: 0px;
+}
+
+.language-select-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#selected-flag {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+
+select:active, select:focus, select:hover {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+option {
+  font-size: 1.2em;
+  color: #fff;
+  background: #001223;
+  border: none;
+}
+
+/* MAIN */
+
+main{
+  width: 90%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.best-ratings-week img{
+  width: 100%;
+}
+
+.best-ratings-week{
+  display: flex;
+  flex-direction: column;
+}
+
+.first-ratings-week{
+  display: flex;
+  margin-top: 50px;
+}
+
+.first-ratings-week figure{
+  width: 60%;
+}
+
+.first-ratings-week figcaption{
+  font-size: 1.5em;
+}
+
+.first-ratings-week .user-description{
+  width: 40%;
+  margin-left: 20px;
+}
+
+.first-ratings-week .user-description figure{
+  width: 20%;
+}
+
+.first-ratings-week .user-description figcaption{
+  font-size: 1.2em;
+}
+
+.best-ratings-week .grid-ratings-week {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.best-ratings-week .gris-ratings-week-item {
+  margin: 0 10px;
+  scroll-snap-align: start;
+}
+/* FOOTER */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer .footer-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-top .footer-logo{
+  width: 20%;
+}
+
+footer .footer-top .footer-logo img{
+  float: right;
+  width: 80%;
+}
+
+footer .footer-top .footer-top-right{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  font-size: 1.2em;
+}
+
+footer .footer-top .footer-top-right ul li{
+  padding-bottom: 20px;
+}
+
+footer .footer-top .footer-top-right .network{
+  display: flex;
+}
+
+footer .footer-top .footer-top-right .network img{
+  width: 45px;
+  height: 40px;
+}
+
+footer .footer-top .footer-top-right .network li{
+  padding-left: 30px; 
+}
+
+footer .footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+footer .footer-bottom ul{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+/*{border: 1px solid salmon;}
